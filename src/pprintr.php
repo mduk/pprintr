@@ -13,7 +13,7 @@ function pprintr( $var, $indent=0, $indentStep = null ) {
     $str = '';
 
     if ( is_object( $var ) ) {
-        $function = '_pprintr_object_' . get_class( $var );
+        $function = '_pprintr_object_' . str_replace( '\\', '_', get_class( $var ) );
         if ( !is_callable( $function ) ) {
             $function = '_pprintr_object';
         }
