@@ -1,0 +1,6 @@
+{
+  "name": "mduk/pprintr",
+  "autoload": {
+    "files": [ "src/pprintr.php" ]
+  }
+}
